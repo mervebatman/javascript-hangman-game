@@ -92,3 +92,8 @@ body {
 #message.show {
     transform: translateY(-80px);
 }
+
+#title {
+    position: absolute;
+    left: 50%;
+}
