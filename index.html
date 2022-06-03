@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adam Asmaca Oyunu | Merve Batman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- add style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- add google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <h1 class="font-family">Adam Asmaca | Hangman</h1>
+    <p>Kelimeyi tahmin etmek için bir harf giriniz.</p>
+
+    <div class="container font-family">
+        <svg height="250" width="250" class="grafik">
+            <!-- sephayı oluşturan çizgiler -->
+            <line x1="50" y1="20" x2="130" y2="20" />
+            <line x1="130" y1="20" x2="130" y2="50" />
+            <line x1="50" y1="20" x2="50" y2="250" />
+            <line x1="10" y1="249" x2="90" y2="249" />
+
+            <!-- kafayı oluşturan daire -->
+            <circle cx="130" cy="70" r="20" class="body" />
+
+            <!-- gövdeyi oluşturan çizgi -->
+            <line x1="130" y1="90" x2="130" y2="170" class="body" />
+
+            <!-- kolları oluşturan çizgiler -->
+            <line x1="130" y1="120" x2="100" y2="100" class="body" />
+            <line x1="130" y1="120" x2="160" y2="100" class="body" />
+
+            <!-- ayakları oluşturan çizgiler -->
+            <line x1="130" y1="170" x2="100" y2="190" class="body" />
+            <line x1="130" y1="170" x2="160" y2="190" class="body" />
+
+
+        </svg>
+
+        <div id="wrong-letters">
+            
+        </div>
+
+        <div id="word">
+            
+        </div>
+    </div>
+
+    <div id="popup-container">
+        <div class="popup font-family">
+            <h2 id="success-message">Tebrikler, bildiniz!</h2>
+            <button class="btn btn-outline-dark bg-white text-dark" id="play-again">Tekrar Oyna</button>
+        </div>
+    </div>
+
+    <div id="message" class="font-family">
+        <p>Bu harfi zaten girdiniz!</p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- add script.js-->
+    <script src="script.js"></script>
+  </body>
+</html>
